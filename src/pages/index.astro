@@ -1,6 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Imagen1 from '../assets/Gianluca-22.png'
+import Imagen1 from '../assets/Gianluca-1.png'
+import Imagen2 from '../assets/Gianluca-2.png'
+import Imagen3 from '../assets/Gianluca-3.png'
+import Imagen4 from '../assets/Gianluca-4.png'
+import Imagen5 from '../assets/Gianluca-5.png'
+import Imagen6 from '../assets/Gianluca-6.png'
+import Imagen7 from '../assets/Gianluca-7.png'
+import Imagen8 from '../assets/Gianluca-8.png'
+import Imagen9 from '../assets/Gianluca-9.png'
+import Imagen10 from '../assets/Gianluca-10.png'
+import Imagen11 from '../assets/Gianluca-11.png'
+import Imagen12 from '../assets/Gianluca-12.png'
+import Imagen13 from '../assets/Gianluca-13.png'
+import Imagen14 from '../assets/Gianluca-14.png'
+import Imagen15 from '../assets/Gianluca-15.png'
+import Imagen16 from '../assets/Gianluca-16.png'
+import Imagen17 from '../assets/Gianluca-17.png'
+import Imagen18 from '../assets/Gianluca-18.png'
+import Imagen21 from '../assets/Gianluca-21.png'
+import Imagen22 from '../assets/Gianluca-22.png'
+import Imagenbg19 from '../assets/Gianluca-19.jpeg'
+import Imagenbg10 from '../assets/Gianluca-10.jpeg'
+import BgMobile from '../assets/tall-arg.png'
+import BgDesktop from '../assets/tall-arg2.jpg'
+import Muchachos from '../assets/Y2meta.app - La Mosca - Muchachos, ahora nos volvimos a ilusionar (128 kbps).mp3'
 ---
 
 <Layout title="CUMPLE DE GIANLUCA">
@@ -10,11 +34,11 @@ import Imagen1 from '../assets/Gianluca-22.png'
     >
       <div>
         <img
-          src="../assets/Gianluca-19.jpeg"
+          src={Imagenbg19.src}
           class="w-full h-full block md:hidden object-cover absolute mix-blend-overlay"
         />
         <img
-          src={Imagen1.src}
+          src={Imagenbg10.src}
           class="w-full h-full object-top hidden md:block object-cover absolute mix-blend-overlay"
         />
         <div
@@ -28,31 +52,31 @@ import Imagen1 from '../assets/Gianluca-22.png'
     </div>
 
     <div class="carrusel pt-6">
-      <img class="galeria" src="../assets/Gianluca-19.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-2.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-3.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-20.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-5.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-6.png" alt="" />
+      <img class="galeria" src={Imagen1.src} alt="" />
+      <img class="galeria" src={Imagen2.src} alt="" />
+      <img class="galeria" src={Imagen3.src} alt="" />
+      <img class="galeria" src={Imagen4.src} alt="" />
+      <img class="galeria" src={Imagen5.src} alt="" />
+      <img class="galeria" src={Imagen6.src} alt="" />
     </div>
     <div class="carrusel pt-6">
-      <img class="galeria" src="../assets/Gianluca-7.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-8.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-9.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-10.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-21.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-12.png" alt="" />
+      <img class="galeria" src={Imagen7.src} alt="" />
+      <img class="galeria" src={Imagen8.src} alt="" />
+      <img class="galeria" src={Imagen9.src} alt="" />
+      <img class="galeria" src={Imagen10.src} alt="" />
+      <img class="galeria" src={Imagen11.src} alt="" />
+      <img class="galeria" src={Imagen12.src} alt="" />
     </div>
     <div class="carrusel pt-6">
-      <img class="galeria" src="../assets/Gianluca-13.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-14.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-22.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-16.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-17.png" alt="" />
-      <img class="galeria" src="../assets/Gianluca-18.png" alt="" />
+      <img class="galeria" src={Imagen13.src} alt="" />
+      <img class="galeria" src={Imagen14.src} alt="" />
+      <img class="galeria" src={Imagen15.src} alt="" />
+      <img class="galeria" src={Imagen16.src} alt="" />
+      <img class="galeria" src={Imagen17.src} alt="" />
+      <img class="galeria" src={Imagen18.src} alt="" />
     </div>
     <section
-      class="flex flex-col text-xl items-center pt-2 bg-[url('../../public/background.png')] bg-no-repeat bg-cover h-screen"
+      class={"flex flex-col text-xl items-center pt-2 durigo bg-no-repeat bg-cover h-screen"}
     >
       <div class="pl-2 pr-2 pt-8 flex flex-col text-center items-center">
         <p class='lg:text-3xl'>
@@ -76,7 +100,7 @@ import Imagen1 from '../assets/Gianluca-22.png'
           </div>
         </div>
     </section>
-    <audio autoplay id="audioPlayer" src="../../public/Y2meta.app - La Mosca - Muchachos, ahora nos volvimos a ilusionar (128 kbps).mp3"></audio>
+    <audio autoplay id="audioPlayer" src={Muchachos}></audio>
     <button id="playButton" class='fixed bottom-10 right-5'> Play
     </button>
   </main>
@@ -138,5 +162,9 @@ import Imagen1 from '../assets/Gianluca-22.png'
     width: 50px;
     height: 50px;
     border-radius: 100%
+  }
+
+  .durigo {
+    background-image: {{BgMobile}};
   }
 </style>
