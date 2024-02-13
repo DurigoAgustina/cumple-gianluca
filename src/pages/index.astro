@@ -1,0 +1,141 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="CUMPLE DE GIANLUCA">
+  <main>
+    <div
+      class="bg-gradient-to-r from-[#162D59]/50 to-[#193773]/50 bg-scroll relative"
+    >
+      <div>
+        <img
+          src="../../public//Gianluca-19.jpeg"
+          class="w-full h-full block md:hidden object-cover absolute mix-blend-overlay"
+        />
+        <img
+          src="../../public//Gianluca-10.jpeg"
+          class="w-full h-full object-top hidden md:block object-cover absolute mix-blend-overlay"
+        />
+        <div
+          class="text-[#F2F2F2] gap-5 text-stroke-1 flex flex-col items-center justify-end pb-32 h-screen"
+        >
+          <h5 class="font-semibold text-3xl">MIS 6 AÑOS</h5>
+          <h1 class="font-bold text-7xl text-underline">Gianluca</h1>
+          <h5 class="font-semibold text-3xl">¡FESTEJEMOS JUNTOS!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="carrusel pt-6">
+      <img class="galeria" src="../../public//Gianluca-19.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-2.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-3.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-20.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-5.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-6.png" alt="" />
+    </div>
+    <div class="carrusel pt-6">
+      <img class="galeria" src="../../public//Gianluca-7.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-8.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-9.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-10.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-21.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-12.png" alt="" />
+    </div>
+    <div class="carrusel pt-6">
+      <img class="galeria" src="../../public//Gianluca-13.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-14.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-22.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-16.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-17.png" alt="" />
+      <img class="galeria" src="../../public//Gianluca-18.png" alt="" />
+    </div>
+    <section
+      class="flex flex-col text-xl items-center pt-2 bg-[url('../../public/background.png')] bg-no-repeat bg-cover h-screen"
+    >
+      <div class="pl-2 pr-2 pt-8 flex flex-col text-center items-center">
+        <p class='lg:text-3xl'>
+          Este 28 de febrero cumplo 6 añitos y decidí festejarlo el
+          <span class="p-1 bg-[#162D59] text-[#f2f2f2]">3 de marzo</span>.</br>
+          Voy a estar muy feliz de celebrar con todos mis amigos y familiares.</br> ¡Espero que todos puedan venir a mi fiesta y pasar un hermoso día juntos!</br> Por favor no olvides de</br>
+        </p>
+        <a href="https://wa.me/5493517730127" class="p-2 rounded-md bg-[#162D59] text-[#f2f2f2] lg:mt-1">confirmar asistencia❤️<a>
+        <div class="flex flex-col items-center pt-8">
+          <h3 class="pb-5 font-bold text-4xl lg:text-6xl tracking-[2px] text-stroke-2 ">¿Cuándo?</h3>
+          <div class='flex flex-col '>
+            <div>
+              <p class='text-stroke-2 text-4xl'>DOMINGO</p>
+              <h2 class='text-8xl text-[#f2f2f2] text-stroke-3'>3</h2>
+              <p class='text-stroke-2 text-4xl'>de marzo</p>
+            </div>
+            <div class='flex flex-col gap-2 text-4xl'>
+              <p class='bg-[#162d59] text-[#f2f2f2] p-2'> de 16 a 19hs</p>
+              <p class=' text-stroke-2'>CATAMARCA 772</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <audio autoplay id="audioPlayer" src="../../public/Y2meta.app - La Mosca - Muchachos, ahora nos volvimos a ilusionar (128 kbps).mp3"></audio>
+    <button id="playButton" class='fixed bottom-10 right-5'> Play
+    </button>
+  </main>
+  <script>
+    const audioPlayer = document.getElementById('audioPlayer');
+    const playButton = document.getElementById('playButton');
+
+    playButton.addEventListener('click', function() {
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+        playButton.textContent = "Stop";
+      } else {
+        audioPlayer.pause();
+        playButton.textContent = "Play";
+      }
+    });
+  </script>
+</Layout>
+
+<style>
+  .carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .galeria {
+    flex: 1 0 auto;
+    margin: 0 10px;
+    width: 300px;
+    height: 300px;
+    object-position: top center;
+    object-fit: cover;
+  }
+
+  .text-stroke-3 {
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #162d59;
+  }
+  .text-stroke-2 {
+    -webkit-text-stroke-width: 1.9px;
+    -webkit-text-stroke-color: #f2f2f2;
+  }
+  .text-stroke-1 {
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #162d59;
+  }
+  .text-underline {
+    text-decoration: underline dotted #f2f2f2;
+  }
+  #audioPlayer {
+  display: none;
+  }
+
+  #playButton{
+    border: 2px solid #162D59;
+    background-color: #f2f2f2;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%
+  }
+</style>
