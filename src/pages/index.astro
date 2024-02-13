@@ -83,12 +83,12 @@ import Layout from "../layouts/Layout.astro";
     const audioPlayer = document.getElementById('audioPlayer');
     const playButton = document.getElementById('playButton');
 
-    playButton.addEventListener('click', function() {
-      if (audioPlayer.paused) {
+    playButton?.addEventListener('click', function() {
+      if (audioPlayer?.paused) {
         audioPlayer.play();
         playButton.textContent = "Stop";
       } else {
-        audioPlayer.pause();
+        audioPlayer?.pause();
         playButton.textContent = "Play";
       }
     });

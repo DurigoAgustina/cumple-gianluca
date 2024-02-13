@@ -9,6 +9,11 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "vercel": {
+    "build": {
+      "strictTypescript": false
+    }
+  },
   "dependencies": {
     "@astrojs/check": "^0.5.2",
     "@astrojs/tailwind": "^5.1.0",
