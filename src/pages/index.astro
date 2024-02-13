@@ -80,15 +80,15 @@ import Layout from "../layouts/Layout.astro";
     </button>
   </main>
   <script>
-    const audioPlayer = document.getElementById('audioPlayer');
-    const playButton = document.getElementById('playButton');
+    const audioPlayer: HTMLAudioElement | null = document.getElementById('audioPlayer') as HTMLAudioElement;
+    const playButton: HTMLAudioElement | null = document.getElementById('playButton') as HTMLAudioElement;
 
     playButton?.addEventListener('click', function() {
-      if (audioPlayer?.paused) {
+      if (audioPlayer.paused) {
         audioPlayer.play();
         playButton.textContent = "Stop";
       } else {
-        audioPlayer?.pause();
+        audioPlayer.pause();
         playButton.textContent = "Play";
       }
     });
