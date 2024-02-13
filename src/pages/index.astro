@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Imagen1 from '../assets/Gianluca-22.png'
 ---
 
 <Layout title="CUMPLE DE GIANLUCA">
@@ -9,11 +10,11 @@ import Layout from "../layouts/Layout.astro";
     >
       <div>
         <img
-          src="../../public//Gianluca-19.jpeg"
+          src="../assets/Gianluca-19.jpeg"
           class="w-full h-full block md:hidden object-cover absolute mix-blend-overlay"
         />
         <img
-          src="../../public//Gianluca-10.jpeg"
+          src={Imagen1.src}
           class="w-full h-full object-top hidden md:block object-cover absolute mix-blend-overlay"
         />
         <div
@@ -27,28 +28,28 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="carrusel pt-6">
-      <img class="galeria" src="../../public//Gianluca-19.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-2.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-3.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-20.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-5.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-6.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-19.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-2.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-3.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-20.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-5.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-6.png" alt="" />
     </div>
     <div class="carrusel pt-6">
-      <img class="galeria" src="../../public//Gianluca-7.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-8.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-9.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-10.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-21.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-12.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-7.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-8.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-9.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-10.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-21.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-12.png" alt="" />
     </div>
     <div class="carrusel pt-6">
-      <img class="galeria" src="../../public//Gianluca-13.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-14.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-22.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-16.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-17.png" alt="" />
-      <img class="galeria" src="../../public//Gianluca-18.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-13.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-14.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-22.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-16.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-17.png" alt="" />
+      <img class="galeria" src="../assets/Gianluca-18.png" alt="" />
     </div>
     <section
       class="flex flex-col text-xl items-center pt-2 bg-[url('../../public/background.png')] bg-no-repeat bg-cover h-screen"
@@ -81,7 +82,7 @@ import Layout from "../layouts/Layout.astro";
   </main>
   <script>
     const audioPlayer: HTMLAudioElement | null = document.getElementById('audioPlayer') as HTMLAudioElement;
-    const playButton: HTMLAudioElement | null = document.getElementById('playButton') as HTMLAudioElement;
+    const playButton: HTMLButtonElement | null = document.getElementById('playButton') as HTMLButtonElement;
 
     playButton?.addEventListener('click', function() {
       if (audioPlayer.paused) {
