@@ -18,13 +18,11 @@ import Imagen15 from '../assets/Gianluca-15.png'
 import Imagen16 from '../assets/Gianluca-16.png'
 import Imagen17 from '../assets/Gianluca-17.png'
 import Imagen18 from '../assets/Gianluca-18.png'
-import Imagen21 from '../assets/Gianluca-21.png'
-import Imagen22 from '../assets/Gianluca-22.png'
 import Imagenbg19 from '../assets/Gianluca-19.jpeg'
 import Imagenbg10 from '../assets/Gianluca-10.jpeg'
-import BgMobile from '../assets/tall-arg.png'
-import BgDesktop from '../assets/tall-arg2.jpg'
 import Muchachos from '../assets/Y2meta.app - La Mosca - Muchachos, ahora nos volvimos a ilusionar (128 kbps).mp3'
+
+const BgMobile = "../assets/tall-arg.png"
 ---
 
 <Layout title="CUMPLE DE GIANLUCA">
@@ -76,7 +74,7 @@ import Muchachos from '../assets/Y2meta.app - La Mosca - Muchachos, ahora nos vo
       <img class="galeria" src={Imagen18.src} alt="" />
     </div>
     <section
-      class={"flex flex-col text-xl items-center pt-2 durigo bg-no-repeat bg-cover h-screen"}
+      class="flex flex-col text-xl items-center pt-2 bg-[url('/src/assets/tall-arg.png')] bg-no-repeat bg-cover h-screen"
     >
       <div class="pl-2 pr-2 pt-8 flex flex-col text-center items-center">
         <p class='lg:text-3xl'>
@@ -162,9 +160,5 @@ import Muchachos from '../assets/Y2meta.app - La Mosca - Muchachos, ahora nos vo
     width: 50px;
     height: 50px;
     border-radius: 100%
-  }
-
-  .durigo {
-    background-image: {{BgMobile}};
   }
 </style>
